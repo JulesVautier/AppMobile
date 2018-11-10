@@ -18,9 +18,7 @@ export class MyApp {
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, private fcm: FCM) {
     this.initializeApp();
-    alert('yo')
     platform.ready().then(() => {
-      alert('test')
       //Notifications
       fcm.subscribeToTopic('all');
       fcm.getToken().then(token=>{
