@@ -10,7 +10,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { FCM } from '@ionic-native/fcm';
-import { MyService} from "./MyService";
+//import { MyService} from "./MyService";
 import {Contact, Contacts} from "@ionic-native/contacts";
 
 @NgModule({
@@ -34,7 +34,7 @@ import {Contact, Contacts} from "@ionic-native/contacts";
     SplashScreen,
     FCM,
     Contacts,
-    MyService,
+    //MyService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
